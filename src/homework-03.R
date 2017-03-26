@@ -144,3 +144,18 @@ comic_characters$name_pri
 # Ellenorzes
 comic_characters$name_pri[1]
 comic_characters$name_pri[2]
+
+
+
+# 5.3. Írj egy függvény ```get_gender``` néven, aminek az a célja, hogy egy karakter nevének megadásakor visszaadja a karakter genderét. A karakter genderét úgy add vissza, hogy ha a ```gsm``` oszlopban ```NA``` érték van, akkor a ```sex``` oszlop tartalmát írja ki a függvény, viszont ha a ```gsm``` oszlop értéke nem ```NA```, akkor a ```gsm``` oszlop tartalmát írja ki. A gender kiírásakor vágd le a " Characters" részt, tehát pl. "Male Characters" helyett "Male"-t, "Female Characters" helyett "Female"-t írjon ki a függvény. A függvényben ne legyen for ciklus! Figyelj arra is, hogy a 2. feladatban végrehajtott átalakítás miatt egy név többször is szerepelhet a ```name``` oszlopban. Ilyen esetekben minden egyező név esetén nézze meg a gendert és vektorként térjen vissza az értékeikkel.
+# 5.4. Nézd meg az előzőleg írt ```get_gender``` függvénnyel, hogy milyen genderű Thor, Katherine Pryde és Loki Laufeyson! Thornál és Lokinál egy vektort kell kapnod.
+
+get_gender("Thor")
+get_gender("Loki Laufeyson")
+get_gender("Katherine Pryde")
+
+# Ellenőrzés
+table(comic_characters$name_pri)["Thor"]
+table(comic_characters$name_pri)["Loki Laufeyson"]
+table(comic_characters$name_pri)["Katherine Pryde"]
+
